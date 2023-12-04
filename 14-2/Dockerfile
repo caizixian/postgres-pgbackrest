@@ -1,7 +1,7 @@
-FROM postgres:14.9-bullseye
+FROM postgres:14.10-bullseye
 
 # http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgbackrest/
 RUN apt-get update && apt-get install -y \
-      pgbackrest=2.48-1.pgdg110+1 \
+      pgbackrest=2.49-1.pgdg110+1 \
       ca-certificates \
       && rm -rf /var/lib/apt/lists/*
